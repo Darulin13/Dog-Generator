@@ -4,10 +4,12 @@ import styled from "styled-components";
 
 const Container = styled.section`
     padding-bottom:30px;
+    padding-top:1vw;
 
 `
 const Button = styled.button`
-    width:10%;
+    width:15%;
+    font-size:1.5vw;
     @media(max-width:578px){
         width:50%;
    
@@ -21,13 +23,19 @@ const Img = styled.img`
 `
 const Logo = styled.img`
     
-    border:solid red;
-    width:10%;
+    border:solid black 2px;
+    width:10%;s
+    border-radius:50%;
 
 
 
 `
 const Title = styled.h1`
+    font-size:2vw;
+    @media(max-width:578px){
+        font-size:4vw;
+   
+    }
 
 `
 const Header = styled.header`
@@ -35,6 +43,7 @@ const Header = styled.header`
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
+    align-items:center;
     padding-bottom:20px;
 
 `
@@ -58,7 +67,7 @@ export default function Generator() {
         <Container>
             <Header>
                 <Title>Dog Generator</Title>
-                <Logo src="https://static.wikia.nocookie.net/megamitensei/images/9/98/Q2_AOA_P3_Koromaru.png/revision/latest/scale-to-width-down/250?cb=20190905100747" alt="cachoro" />
+                <Logo src="https://pbs.twimg.com/profile_images/1546324651844009984/iJXdzpBo_400x400.jpg" alt="cachoro" />
             </Header>
             <Main>
                 <Button onClick={() => { Dog() }}> Random</Button>
